@@ -23,19 +23,19 @@ calculationButton.addEventListener(
 
         // SE numero PC più alto vince
         if (numberPc > numberUser) {
-            console.log("Numero PC: " + numberPc + ", Numero utente: " + numberUser + "\n" + "Vince il PC.");
+            // console.log("Numero PC: " + numberPc + ", Numero utente: " + numberUser + "\n" + "Vince il PC.");
             let outputMessage = ("Mi dispiace, ha vinto il PC.");
             document.getElementById("output_message").innerHTML = outputMessage;
 
             // ALTRIMENTI SE numero uguale pareggiano
         } else if (numberPc == numberUser) {
-            console.log("Numero PC: " + numberPc + ", Numero utente: " + numberUser + "\n" + "Pareggio.");
+            // console.log("Numero PC: " + numberPc + ", Numero utente: " + numberUser + "\n" + "Pareggio.");
             let outputMessage = ("Poteva andare peggio, è un pareggio.");
             document.getElementById("output_message").innerHTML = outputMessage;
 
             // ALTRIMENTI vince utente
         } else {
-            console.log("Numero PC: " + numberPc + ", Numero utente: " + numberUser + "\n" + "Vince l'utente.");
+            // console.log("Numero PC: " + numberPc + ", Numero utente: " + numberUser + "\n" + "Vince l'utente.");
             let outputMessage = ("COMPLIMENTI, HAI VINTO!");
             document.getElementById("output_message").innerHTML = outputMessage;
 

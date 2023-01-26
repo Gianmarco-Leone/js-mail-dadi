@@ -25,27 +25,33 @@
 
     <div class="container">
 
-        <h1 class="text-center">IL GIOCO DEI DADI</h1>
+        <h1 class="text-center text-white py-4">IL GIOCO DEI DADI</h1>
 
         <div class="row">
 
-            <div class="col-6 text-center">
-                <h2>Il numero del PC è:</h2>
-                <span id="number_pc" class="fw-bold"></span>
+            <div class="col-6">
+                <div class="col-content text-center mx-3">
+                    <h2>Il numero del PC è:</h2>
+                    <span id="number_pc" class="square fw-bold text"></span>
+                </div>
             </div>
 
-            <div class="col-6 text-center">
-                <h2>Il tuo numero è:</h2>
-                <span id="number_user" class="fw-bold"></span>
+            <div class="col-6">
+                <div class="col-content text-center mx-3">
+                    <h2>Il tuo numero è:</h2>
+                    <span id="number_user" class="square fw-bold text"></span>
+                </div>
             </div>
 
         </div>
 
-        <button id="calculation_button">GIOCA ORA</button>
+        <div class="d-flex justify-content-center my-5">
+            <button id="calculation_button" type="button" class="btn btn-success btn-lg">GIOCA ORA</button>
+        </div>
 
         <div class="row">
-            <div class="col-12">
-                <p id="output_message"></p>
+            <div class="col-12 text-center">
+                <p id="output_message" class="h3 text-white"></p>
             </div>
         </div>
     </div>

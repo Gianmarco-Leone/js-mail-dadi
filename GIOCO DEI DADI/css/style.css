@@ -1,0 +1,21 @@
+.container {
+    background-image: url(https://img.freepik.com/premium-vector/poker-table-background-green-color_47243-1094.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container .row .col-6 .col-content {
+    background-color: #EEE;
+    min-height: 10rem;
+}
+
+.container .row .col-6 .col-content .square {
+    display: inline-block;
+    height: 6rem;
+    line-height: 6rem;
+    width: 6rem;
+    background-color: #5b3a29;
+    color: #FFF;
+    box-shadow: 5px 5px #222;
+}
