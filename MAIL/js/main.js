@@ -41,7 +41,8 @@ calculationButton.addEventListener(
             document.getElementById("output_message").innerHTML = outputMessage;
 
         } else {
-            alert("Non hai i permessi per accedere.")
+            alert("Non hai i permessi per accedere.");
+            document.getElementById("output_message").innerHTML = "";
 
         }
 
