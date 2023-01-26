@@ -6,30 +6,46 @@
 // stampa un messaggio appropriato sull'esito del controllo.
 
 // SVOLGIMENTO
-// Chiedere email all'uente
-let userMail = prompt("Qual'è la tua email?");
+// Creo costante bottone che darà il via all'evento
+const calculationButton = document.getElementById("calculation_button");
 
-// Creare un array di email con il quale confrontare
-const mailList = ["mail@mail.it", "mail@mail.com", "mymail@mymail.it", "mymail@mymail.com"];
+calculationButton.addEventListener(
+    "click",
+    function () {
 
-// Creare variabile interruttore per verificare quando diventerà vera
-let mailChecked = false;
+        // Chiedere email all'uente
+        let inputEmail = document.getElementById("insert_email");
+        let userMail = inputEmail.value;
 
-// Identificare tutte le mail dell'array
-for (let i = 0; i < mailList.length; i++) {
-    console.log(mailList[i]);
+        // Creare un array di email con il quale confrontare
+        const mailList = ["mail@mail.it", "mail@mail.com", "mymail@mymail.it", "mymail@mymail.com"];
 
-    // Verificare che la mail sia presente nella lista dell'array
-    if (mailList[i] == userMail) {
-        mailChecked = true;
+        // Creare variabile interruttore per verificare quando diventerà vera
+        let mailChecked = false;
+
+        // Identificare tutte le mail dell'array
+        for (let i = 0; i < mailList.length; i++) {
+            // console.log(mailList[i]);
+
+            // Verificare che la mail sia presente nella lista dell'array
+            if (mailList[i] == userMail) {
+                mailChecked = true;
+            }
+        }
+
+        // Stampare esito controllo
+        if (mailChecked == true) {
+            // console.log("Benvenuto " + userMail + ", puoi accedere.");
+
+            let outputMessage = "Benvenuto " + userMail + ", puoi accedere.";
+            document.getElementById("output_message").innerHTML = outputMessage;
+
+        } else {
+            alert("Non hai i permessi per accedere.")
+
+        }
+
     }
-}
 
-// Stampare esito controllo
-if (mailChecked == true) {
-    console.log("Benvenuto " + userMail + ", puoi accedere.");
+);
 
-} else {
-    alert("Non hai i permessi per accedere.")
-
-}
