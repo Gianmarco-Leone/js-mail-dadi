@@ -5,6 +5,21 @@
     background-position: center;
 }
 
+.container header i {
+    color: #FFF;
+    font-size: 2rem;
+}
+
+.container header .fa-solid {
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
 .container .row .col-6 .col-content {
     background-color: #EEE;
     min-height: 10rem;
