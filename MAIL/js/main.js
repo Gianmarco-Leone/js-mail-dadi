@@ -25,7 +25,6 @@ calculationButton.addEventListener(
 
         // Identificare tutte le mail dell'array
         for (let i = 0; i < mailList.length; i++) {
-            // console.log(mailList[i]);
 
             // Verificare che la mail sia presente nella lista dell'array
             if (mailList[i] == userMail) {
@@ -33,18 +32,17 @@ calculationButton.addEventListener(
             }
         }
 
+        let outputMessage;
         // Stampare esito controllo
         if (mailChecked == true) {
-            // console.log("Benvenuto " + userMail + ", puoi accedere.");
-
-            let outputMessage = "Benvenuto " + userMail + ", puoi accedere.";
-            document.getElementById("output_message").innerHTML = outputMessage;
+            outputMessage = "Benvenuto " + userMail + ", puoi accedere.";
 
         } else {
-            alert("Non hai i permessi per accedere.");
-            document.getElementById("output_message").innerHTML = "";
+            outputMessage = "Non hai i permessi per accedere";
 
         }
+
+        document.getElementById("output_message").innerHTML = outputMessage;
 
     }
 
